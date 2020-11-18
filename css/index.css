@@ -11,6 +11,14 @@
 }
 
 /* variables */
+:root {
+  --text-color: #222;
+  --bg-color: #fff;
+  --highlight-color: #ff0;
+  --error-color: #f08080;
+  --box-shadow-color: rgba(0, 0, 0, 0.14);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --text-color: #eee;
@@ -18,17 +26,6 @@
     --highlight-color: #7e7e00;
     --error-color: #cc6c6c;
     --box-shadow-color: rgba(255, 255, 255, 0.14);
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --text-color: #222;
-    --bg-color: #fff;
-
-    --highlight-color: #ff0;
-    --error-color: #f08080;
-    --box-shadow-color: rgba(0, 0, 0, 0.14);
   }
 }
 
