@@ -56,6 +56,10 @@ html {
   justify-self: flex-start;
 }
 
+.game__emoji {
+  display: inline-block;
+}
+
 .game__quote-wrapper {
   display: flex;
   flex-grow: 1;
@@ -118,6 +122,11 @@ html {
   .game__title {
     font-size: 4rem;
   }
+
+  .game__emoji {
+    transform: translateY(0.5rem);
+    font-size: 4rem;
+  }
 }
 
 /* mobile */
@@ -128,6 +137,11 @@ html {
   }
 
   .game__title {
+    font-size: 2rem;
+  }
+
+  .game__emoji {
+    transform: translateY(0.3rem);
     font-size: 2rem;
   }
 }
