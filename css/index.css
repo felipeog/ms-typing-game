@@ -1,0 +1,115 @@
+/* reset */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: normal;
+  color: currentColor;
+  line-height: 1.4;
+}
+
+/* variables */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #eee;
+    --bg-color: #222;
+    --highlight-color: #7e7e00;
+    --error-color: #cc6c6c;
+    --box-shadow-color: rgba(255, 255, 255, 0.14);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --text-color: #222;
+    --bg-color: #fff;
+
+    --highlight-color: #ff0;
+    --error-color: #f08080;
+    --box-shadow-color: rgba(0, 0, 0, 0.14);
+  }
+}
+
+/* base */
+html {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* blocks and elements */
+.game {
+  width: 500px;
+  height: 300px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.game__title {
+  font-size: 4rem;
+  font-weight: 700;
+  justify-self: flex-start;
+}
+
+.game__quote-wrapper {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.game__quote {
+  font-family: 'Courier Prime', monospace;
+}
+
+.game__input {
+  position: absolute;
+  display: none;
+  font-family: 'Courier Prime', monospace;
+  transition: 200ms;
+  border: none;
+  outline: none;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.4rem;
+  border: 0.1rem solid var(--text-color);
+  background-color: var(--bg-color);
+}
+
+.game__start {
+  background: unset;
+  padding: 0.4rem 1.2rem;
+  justify-self: flex-end;
+  align-self: flex-start;
+  border: 0.1rem solid var(--text-color);
+  border-radius: 0.4rem;
+  cursor: pointer;
+  outline: none;
+  transition: 200ms box-shadow;
+}
+
+.game__start:hover {
+  box-shadow: 0 0 0.6rem 0.1rem var(--box-shadow-color);
+}
+
+/* modifiers */
+.game__word--active {
+  background-color: var(--highlight-color);
+}
+
+.game__input--active {
+  display: block;
+}
+
+.game__input--error {
+  background-color: var(--error-color);
+}
