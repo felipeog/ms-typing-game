@@ -1,12 +1,25 @@
 // consts
 const quotes = [
-  'When you have eliminated the impossible, whatever remains, however improbable, must be the truth.',
-  'There is nothing more deceptive than an obvious fact.',
-  'I ought to know by this time that when a fact appears to be opposed to a long train of deductions it invariably proves to be capable of bearing some other interpretation.',
-  'I never make exceptions. An exception disproves the rule.',
-  'What one man can invent another can discover.',
-  'Nothing clears up a case so much as stating it to another person.',
-  'Education never ends, Watson. It is a series of lessons, with the greatest for the last.',
+  "Life isn't about getting and having, it's about giving and being.",
+  'Whatever the mind of man can conceive and believe, it can achieve.',
+  'Strive not to be a success, but rather to be of value.',
+  'Two roads diverged in a wood, and I—I took the one less traveled by, And that has made all the difference.',
+  'I attribute my success to this: I never gave or took any excuse.',
+  "You miss 100% of the shots you don't take.",
+  'The most difficult thing is the decision to act, the rest is merely tenacity.',
+  'Every strike brings me closer to the next home run.',
+  'Definiteness of purpose is the starting point of all achievement.',
+  'We must balance conspicuous consumption with conscious capitalism.',
+  "Life is what happens to you while you're busy making other plans.",
+  'We become what we think about.',
+  '15.Life is 10% what happens to me and 90% of how I react to it.',
+  "The most common way people give up their power is by thinking they don't have any.",
+  'The mind is everything. What you think you become.',
+  'The best time to plant a tree was 20 years ago. The second best time is now.',
+  'An unexamined life is not worth living.',
+  'Eighty percent of success is showing up.',
+  "Your time is limited, so don't waste it living someone else's life.",
+  "Winning isn't everything, but wanting to win is.",
 ]
 const quoteElement = document.querySelector('.game__quote')
 const inputElement = document.querySelector('.game__input')
